@@ -9,8 +9,9 @@
       <p><%= blog.content %></p>
       <%= link_to "編集", edit_blog_path(blog.id), class: 'btn btn-success btn-sm' %>
       <%= link_to "削除", blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-danger btn-sm' %>
-      <p>posted by <%= blog.user.name %></p>
+      posted by <%= blog.user.name %>
     </div>
+    
     <% end %>
   </div>
 </div>
